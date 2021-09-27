@@ -7,13 +7,11 @@ namespace TechTalk.SpecFlow.Specs.Drivers
     public class ConfigurationLoaderDriver
     {
         private readonly ConfigurationDriver _configurationDriver;
-        private readonly CucumberMessagesConfigurationDriver _cucumberMessagesConfigurationDriver;
         private readonly SolutionDriver _solutionDriver;
 
-        public ConfigurationLoaderDriver(ConfigurationDriver configurationDriver, CucumberMessagesConfigurationDriver cucumberMessagesConfigurationDriver, SolutionDriver solutionDriver)
+        public ConfigurationLoaderDriver(ConfigurationDriver configurationDriver, SolutionDriver solutionDriver)
         {
             _configurationDriver = configurationDriver;
-            _cucumberMessagesConfigurationDriver = cucumberMessagesConfigurationDriver;
             _solutionDriver = solutionDriver;
         }
 
