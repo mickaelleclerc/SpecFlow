@@ -100,5 +100,11 @@ namespace TechTalk.SpecFlow.Specs.StepDefinitions
         {
             _configurationDriver.AddRuntimeRegisterDependency(typeName, interfaceName);
         }
+        
+        [Given(@"there is a scenario")]
+        public void GivenThereIsAScenario()
+        {
+            _testSuiteSetupDriver.AddScenarios(1);
+        }
     }
 }
